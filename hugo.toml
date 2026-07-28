@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://kinkajou.dev/'
 locale = 'en-us'
-title = 'My New Hugo Project'
+title = 'Project Kinkajou'
 theme = 'hextra'

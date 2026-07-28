@@ -9,10 +9,14 @@ node_modules/
 # OS / editor
 .DS_Store
 Thumbs.db
-.idea/
 .vscode/
 *.swp
 *.swo
+
+# IntelliJ: keep shared run configs; ignore the rest via .idea/.gitignore
+.idea/*
+!.idea/runConfigurations/
+!.idea/runConfigurations/**
 
 # Env / secrets
 .env
