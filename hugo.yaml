@@ -1,0 +1,49 @@
+# Project Kinkajou documentation site
+baseURL: https://kinkajou.dev/
+locale: en-us
+title: Project Kinkajou
+theme: hextra
+
+enableRobotsTXT: true
+enableGitInfo: false
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+menu:
+  main:
+    - name: Projects
+      pageRef: /projects
+      weight: 1
+    - name: Bridge
+      pageRef: /bridge
+      weight: 2
+    - name: Search
+      weight: 3
+      params:
+        type: search
+
+params:
+  description: Project Kinkajou — tools that connect your streaming and maker workflows.
+
+  navbar:
+    displayTitle: true
+    displayLogo: false
+
+  page:
+    width: normal
+
+  theme:
+    default: system
+    displayToggle: true
+
+  footer:
+    displayCopyright: true
+    displayPoweredBy: true
+
+  editURL:
+    enable: false

@@ -1,4 +1,0 @@
-baseURL = 'https://kinkajou.dev/'
-locale = 'en-us'
-title = 'Project Kinkajou'
-theme = 'hextra'
