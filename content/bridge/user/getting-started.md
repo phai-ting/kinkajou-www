@@ -5,7 +5,9 @@ aliases:
   - /bridge/getting-started/
 ---
 
-Install Bridge, connect a cloud service or LAN printer, and optionally link Streamer.bot.
+Install Bridge, connect a cloud service or LAN printer, then add OBS overlays and/or Streamer.bot as you need them.
+
+**Overlays do not require Streamer.bot** — they use Bridge’s local API. Streamer.bot is an optional integration for automation when printer events fire.
 
 ## Install and run
 
@@ -47,13 +49,13 @@ Open **Printers**.
 
 After save, Bridge returns to the **printers list**. Open **Details** for status, **Remove printer**, and ready-made **overlay / Streamer.bot** connection info (printer id, API, WebSocket, Overview and Compact URLs).
 
-### 3. Connect Streamer.bot (optional)
+### 3. Add overlays in OBS (optional)
 
-Open **Streamer.bot** and enter the WebSocket Server host, port, endpoint, and optional password from Streamer.bot → **Servers/Clients → WebSocket Server**. See [Connect Streamer.bot](../streamerbot/).
+Copy an Overview or Compact URL from **Printers → Details**, then add Browser Sources in OBS. See [Overlays in OBS](../overlays/). No Streamer.bot connection is required for overlays.
 
-### 4. Add overlays in OBS (optional)
+### 4. Connect Streamer.bot (optional)
 
-Copy an Overview or Compact URL from **Printers → Details**, then add Browser Sources in OBS. See [Overlays in OBS](../overlays/).
+Open **Streamer.bot** and enter the WebSocket Server host, port, endpoint, and optional password from Streamer.bot → **Servers/Clients → WebSocket Server**. See [Connect Streamer.bot](../streamerbot/). Use this when you want Bridge to fire Streamer.bot actions on printer events — it is separate from overlays.
 
 ### 5. Use the local API (optional)
 

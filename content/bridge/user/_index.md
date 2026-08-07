@@ -6,7 +6,7 @@ sidebar:
   open: true
 ---
 
-Install and operate Kinkajou Bridge on your PC — services, printers, Streamer.bot, and on-stream overlays.
+Install and operate Kinkajou Bridge on your PC — services, printers, optional Streamer.bot, and OBS overlays (overlays do not require Streamer.bot).
 
 {{< cards >}}
   {{< card link="getting-started/" title="Getting started" icon="sparkles" >}}

@@ -42,4 +42,4 @@ Plugins may optionally expose:
 
 ## Clients
 
-Bridge is API-first. Streamer.bot is a first-class built-in integration; overlays and other tools use the same local HTTP and WebSocket API (default `127.0.0.1:29067`).
+Bridge is API-first. **Streamer.bot** is an optional built-in integration for automation. **Overlays and other tools** use the same local HTTP and WebSocket API (default `127.0.0.1:29067`) and do not require Streamer.bot.

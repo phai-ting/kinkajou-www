@@ -8,6 +8,8 @@ aliases:
 
 How to connect Kinkajou Bridge to Streamer.bot as a user.
 
+Streamer.bot is **optional**. Bridge can run printers and OBS overlays without it. Connect Streamer.bot when you want Bridge to trigger Streamer.bot actions (`DoAction`) on printer events. Overlays still talk to Bridge’s API directly either way.
+
 ## What Bridge does
 
 Bridge acts as a WebSocket **client** to Streamer.bot’s WebSocket Server. When a printer event occurs, Bridge calls `DoAction` with a name like `Kinkajou.print.started` and a set of arguments (printer id, name, plugin id, and event payload).
@@ -30,4 +32,4 @@ If the WebSocket cannot connect, Bridge keeps the integration in an error state 
 ## Next steps
 
 - Create matching actions in Streamer.bot — see [Streamer.bot Action docs](../../streamerbot-actions/).
-- For on-stream widgets that read live status continuously, see [Overlay developer docs](../../overlay-developer/).
+- For on-stream widgets (no Streamer.bot required), see [Overlays in OBS](../overlays/) and the [overlay developer docs](../../overlay-developer/).
