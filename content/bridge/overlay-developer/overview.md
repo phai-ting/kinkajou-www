@@ -17,7 +17,7 @@ Ready-made OBS overlays (**Overview**, **Compact**, and others) are **served by 
 ## Where to start
 
 1. Run Bridge and add at least one printer (see [User docs](../../user/getting-started/)). Copy the printer id from **Printers → Details**.
-2. Either use a built-in overlay (`http://127.0.0.1:29067/bridge/overview/?printer=…`) or call the [HTTP & WebSocket API](../api/) from your own page.
-3. Prefer the event WebSocket (`/v1/events`) for live updates; use REST for one-shot reads. You do not need a special Kinkajou JS SDK — browser `fetch` / `WebSocket` (or any HTTP client you already use) is enough.
+2. Either use a built-in overlay (`http://127.0.0.1:29067/bridge/overview/?printer=…`), [drop your own HTML into Bridge’s custom folder](../custom/), or call the [HTTP & WebSocket API](../api/) from a page you host elsewhere.
+3. Prefer the event WebSocket (`/v1/events`) for live updates; use REST for one-shot reads. You do not need a special Kinkajou JS SDK — browser `fetch` / `WebSocket` (or any HTTP client you already use) is enough. Built-in and custom overlays served by Bridge can also load `/bridge/_shared/bridge-client.js`.
 
 Streamer.bot is a separate path: Bridge pushes `DoAction` into Streamer.bot. Overlays should use the API directly unless you intentionally route everything through Streamer.bot.

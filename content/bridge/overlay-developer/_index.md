@@ -10,5 +10,6 @@ Build browser overlays and other apps that read printer status and events from K
 
 {{< cards >}}
   {{< card link="overview/" title="Overview" icon="desktop-computer" >}}
+  {{< card link="custom/" title="Custom overlays" subtitle="Drop HTML into Bridge’s custom folder" icon="folder" >}}
   {{< card link="api/" title="HTTP & WebSocket API" icon="code" >}}
 {{< /cards >}}

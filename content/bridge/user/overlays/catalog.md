@@ -50,4 +50,5 @@ Overview and Compact refresh from WebSocket events and tick remaining/elapsed lo
 ## Next
 
 - [Configure in OBS](../setup-obs/)
-- [Overlay developer docs](../../../overlay-developer/) — build your own with `fetch` / `WebSocket`
+- [Custom overlays](../../../overlay-developer/custom/) — drop your own HTML into Bridge’s `overlays/custom` folder
+- [Overlay developer docs](../../../overlay-developer/) — build with `fetch` / `WebSocket`
