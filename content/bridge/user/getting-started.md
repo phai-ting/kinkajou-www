@@ -53,7 +53,7 @@ Open **Streamer.bot** and enter the WebSocket Server host, port, endpoint, and o
 
 ### 4. Add overlays in OBS (optional)
 
-Copy an Overview or Compact URL from **Printers → Details**, then add Browser Sources in OBS. Full steps and sizing live on the overlay site — see [Overlays in OBS](../overlays/).
+Copy an Overview or Compact URL from **Printers → Details**, then add Browser Sources in OBS. See [Overlays in OBS](../overlays/).
 
 ### 5. Use the local API (optional)
 

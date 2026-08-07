@@ -53,5 +53,5 @@ Plus any fields from the event **payload** when present, which may include:
 - Keep one thin “router” action per event, then call shared sub-actions for OBS, TTS, chat, etc.
 - Treat missing optional args as normal (LAN printers may not have `service_instance_id`).
 - Prefer Bridge’s event payload over scraping Streamer.bot globals when possible.
-- For continuous on-stream UI (progress bars, elapsed / remaining / total), prefer a [Bridge overlay](https://overlays.kinkajou.dev/bridge/) (or your own client on the Bridge API) instead of polling via Streamer.bot.
+- For continuous on-stream UI (progress bars, elapsed / remaining / total), prefer a [Bridge overlay](../../user/overlays/) (or your own client on the Bridge API) instead of polling via Streamer.bot.
 - Copy printer id and ready-made overlay URLs from **Printers → Details** in Bridge.
