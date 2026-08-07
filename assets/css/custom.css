@@ -7,6 +7,19 @@
   --color-dark: #0f1218;
 }
 
+@layer theme {
+  :root,
+  :host {
+    --hx-font-sans: "Roboto", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --hx-default-font-family: var(--hx-font-sans);
+  }
+}
+
+body {
+  font-family: var(--hx-default-font-family);
+}
+
 html.dark body {
   background-color: #0f1218;
   background-image:
