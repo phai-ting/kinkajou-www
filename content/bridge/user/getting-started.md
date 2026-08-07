@@ -68,5 +68,5 @@ Every main page uses the same top nav: **Dashboard**, **Services**, **Printers**
 Bridge is still early:
 
 - Built-in Bambu Lab cloud discovery works for listing / adding printers from your account.
-- Live MQTT and OctoPrint telemetry are still stubbed in places — expect connection and status scaffolding to improve over releases.
+- Live Bambu MQTT and OctoPrint REST polling are implemented for status/events; expect more polish across releases.
 - Thumbnail retrieval may return “not implemented” until a plugin supports it.
