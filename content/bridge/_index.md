@@ -5,22 +5,23 @@ cascade:
   type: docs
 ---
 
-**Kinkajou Bridge** is a local Windows service that connects 3D printers to Streamer.bot and other tools through a shared HTTP and WebSocket API.
+**Kinkajou Bridge** is a local Windows app that connects 3D printers to Streamer.bot and other tools through a shared HTTP and WebSocket API.
 
 ## What it does
 
-- Talks to printers through pluggable integrations (Bambu Lab first; more via community plugins)
-- Supports multiple printers and mixed brands at once
-- Fires Streamer.bot actions from printer events
+- Connects **services** (for example Bambu Lab cloud), **printers** (cloud or LAN), and **integrations** (Streamer.bot)
+- Supports multiple printers and mixed connection paths at once
+- Fires Streamer.bot `DoAction` calls from printer events (`Kinkajou.{event_type}`)
 - Exposes a local API so overlays, bots, and other apps can use the same hub
-- Runs as a system tray app and optionally as a Windows service
+- Runs as a system tray app and optionally headless (`--service`)
 
-## In this section
+## Documentation
+
+Pick the section that matches what you are building or using:
 
 {{< cards >}}
-  {{< card link="getting-started/" title="Getting started" icon="sparkles" >}}
-  {{< card link="concepts/" title="Concepts" icon="light-bulb" >}}
-  {{< card link="streamerbot/" title="Streamer.bot" icon="play" >}}
-  {{< card link="api/" title="HTTP & WebSocket API" icon="code" >}}
-  {{< card link="plugins/" title="Plugin author guide" icon="puzzle" >}}
+  {{< card link="user/" title="User docs" subtitle="Install Bridge, connect services, printers, and Streamer.bot" icon="user" >}}
+  {{< card link="bridge-developer/" title="Bridge developer docs" subtitle="Extend Bridge with service, printer, and integration plugins" icon="puzzle" >}}
+  {{< card link="overlay-developer/" title="Overlay developer docs" subtitle="Build overlays and clients on the local API" icon="desktop-computer" >}}
+  {{< card link="streamerbot-actions/" title="Streamer.bot Action docs" subtitle="Write Streamer.bot actions that work with Bridge" icon="play" >}}
 {{< /cards >}}
