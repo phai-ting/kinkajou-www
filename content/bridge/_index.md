@@ -11,7 +11,7 @@ cascade:
 
 - Connects **services** (for example Bambu Lab cloud), **printers** (cloud or LAN), and **integrations** (Streamer.bot)
 - Supports multiple printers and mixed connection paths at once
-- Fires Streamer.bot `DoAction` calls from printer events (`Kinkajou.{event_type}`) when Streamer.bot is connected
+- Fires Streamer.bot `DoAction` on **`Kinkajou Bridge`** (with `event_name` / printer args) when Streamer.bot is connected
 - Serves OBS overlays and a local API so on-stream widgets, bots, and other apps use the same hub
 - Runs as a system tray app and optionally headless (`--service`)
 

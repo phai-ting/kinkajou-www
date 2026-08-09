@@ -66,4 +66,4 @@ Normalized event types include:
 - `print.started`, `print.paused`, `print.resumed`, `print.finished`, `print.failed`, `print.cancelled`
 - `print.layer_changed`, `print.progress`
 
-The Streamer.bot integration forwards these as `DoAction` names `Kinkajou.{event_type}` (for example `Kinkajou.print.started`).
+The Streamer.bot integration forwards every printer event as a `DoAction` call to **`Kinkajou Bridge`**, passing `event_name` (for example `Kinkajou - Print Started`) and `event_type` (for example `print.started`). An exported router dispatches to user-owned actions with those names.

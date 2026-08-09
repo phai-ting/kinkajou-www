@@ -9,8 +9,9 @@ sidebar:
 Write Streamer.bot actions and methods that integrate with Kinkajou Bridge — handling Bridge-triggered `DoAction` calls and building automation around printer events.
 
 {{< cards >}}
-  {{< card link="overview/" title="Overview" icon="play" >}}
-  {{< card link="actions-and-args/" title="Actions and arguments" icon="template" >}}
+  {{< card link="overview/" title="Overview" icon="information-circle" >}}
+  {{< card link="actions-and-args/" title="Actions and arguments" icon="code-bracket" >}}
+  {{< card link="export/" title="Streamer.bot export" icon="arrow-down-tray" >}}
 {{< /cards >}}
 
 Need to connect Bridge to Streamer.bot’s WebSocket server as a user? See [Connect Streamer.bot](../user/streamerbot/).
