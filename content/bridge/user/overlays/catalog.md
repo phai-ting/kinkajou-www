@@ -13,9 +13,11 @@ Use a **separate OBS Browser Source per printer**, each with its own `printer=` 
 | Overlay | Browser Source URL | Recommended size | What it shows |
 | --- | --- | --- | --- |
 | **Overview** | `http://127.0.0.1:29067/bridge/overview/` | **520 × 280** | Name, connection, print state, job, progress bar, elapsed / remaining / est. total, temps |
-| **Compact** | `http://127.0.0.1:29067/bridge/compact/` | **480 × 90** | Name, print-state badge + accent strip, progress bar, elapsed · remaining · total |
+| **Compact** | `http://127.0.0.1:29067/bridge/compact/` | **480 × 100** | Name, print-state badge, tall progress bar with % and remaining time on the bar |
 | **Status** | `http://127.0.0.1:29067/bridge/status/` | **420 × 140** | Name, connection, print state (HTTP poll) |
 | **Progress** | `http://127.0.0.1:29067/bridge/progress/` | **480 × 160** | Job name, progress bar, remaining (HTTP poll) |
+
+![Compact overlay showing printer name, printing badge, progress percent, and remaining time](/images/overlays/compact.png)
 
 Append `?printer=YOUR_PRINTER_ID`. Copy ready-made links from **Printers → Details** in Bridge.
 
