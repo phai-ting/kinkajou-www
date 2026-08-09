@@ -39,7 +39,7 @@ These steps assume **OBS Studio**. Other apps with a Browser Source (Streamlabs 
    | Overlay | Start with |
    | --- | --- |
    | Overview | **520 × 270** |
-   | Compact | **520 × 100** |
+   | Compact | **520 × 130** |
    | Status | **420 × 140** |
    | Progress | **480 × 160** |
 
