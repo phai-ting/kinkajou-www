@@ -6,10 +6,11 @@ sidebar:
   open: true
 ---
 
-Install and operate Kinkajou Bridge on your PC — services, printers, optional Streamer.bot, and OBS overlays (overlays do not require Streamer.bot).
+Install and operate Kinkajou Bridge on your PC (Windows package or Mac/Linux from source) — services, printers, optional Streamer.bot, and OBS overlays (overlays do not require Streamer.bot).
 
 {{< cards >}}
   {{< card link="getting-started/" title="Getting started" icon="sparkles" >}}
+  {{< card link="install-from-source/" title="Mac / Linux (from source)" icon="terminal" >}}
   {{< card link="concepts/" title="Concepts" icon="light-bulb" >}}
   {{< card link="printers/" title="Add a printer" icon="cube" >}}
   {{< card link="streamerbot/" title="Connect Streamer.bot" icon="play" >}}

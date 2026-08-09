@@ -11,15 +11,35 @@ Install Bridge, connect a cloud service or LAN printer, then add OBS overlays an
 
 ## Install and run
 
-1. Install the Windows app (embedded Python runtime; no separate Python install required for release builds).
-2. Start Bridge. By default it runs in the system tray and opens the local UI on first run.
-3. Open the dashboard in your browser at `http://127.0.0.1:29067/ui/` (or use **Open dashboard** from the tray).
+### Windows (packaged app)
+
+1. Download the Windows zip release, unzip it, and run `KinkajouBridge.exe`.
+2. Bridge starts in the system tray and opens the local UI on first run.
+3. Open the dashboard at `http://127.0.0.1:29067/ui/` (or **Open dashboard** from the tray).
 
 Headless / background mode (no tray):
 
 ```text
-kinkajou-bridge --service
+KinkajouBridge.exe --service
 ```
+
+### Mac / Linux (from source)
+
+There is no Mac/Linux binary yet. Install with [uv](https://docs.astral.sh/uv/) and run from the repo — see **[Install from source (Mac / Linux)](../install-from-source/)**.
+
+Short version:
+
+```bash
+git clone https://github.com/phai-ting/kinkajou-bridge.git
+cd kinkajou-bridge
+uv sync
+uv run kinkajou-bridge --service   # recommended for servers / SSH
+# or: uv run kinkajou-bridge       # tray when a GUI session is available
+```
+
+Then open `http://127.0.0.1:29067/ui/`.
+
+### Port override
 
 Override the listen port with `--port` or `KINKAJOU_BRIDGE_PORT` if **29067** is already in use.
 
@@ -69,6 +89,7 @@ Every main page uses the same top nav: **Dashboard**, **Services**, **Printers**
 
 Bridge is still early:
 
+- Official packaged builds are **Windows-only** today; Mac/Linux run from source.
 - Built-in Bambu Lab cloud discovery works for listing / adding printers from your account.
 - Live Bambu MQTT, OctoPrint REST polling, and Moonraker REST polling are implemented for status/events; expect more polish across releases.
 - Thumbnail retrieval may return “not implemented” until a plugin supports it.

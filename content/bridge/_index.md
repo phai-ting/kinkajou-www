@@ -5,7 +5,7 @@ cascade:
   type: docs
 ---
 
-**Kinkajou Bridge** is a local Windows app that connects 3D printers to Streamer.bot and other tools through a shared HTTP and WebSocket API.
+**Kinkajou Bridge** is a local multi-printer hub that connects 3D printers to Streamer.bot and other tools through a shared HTTP and WebSocket API. Windows users can install a packaged app; Mac and Linux users run Bridge from source.
 
 ## What it does
 
