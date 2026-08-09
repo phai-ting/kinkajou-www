@@ -3,6 +3,16 @@ title: Project Kinkajou
 layout: hextra-home
 ---
 
+<div class="hx:flex hx:justify-center hx:mb-8">
+  <img
+    class="kinkajou-hero"
+    src="/Kinkajou.png"
+    alt="Kinkajou"
+    width="1134"
+    height="1134"
+  />
+</div>
+
 {{< hextra/hero-badge >}}
   <div class="hx:w-2 hx:h-2 hx:rounded-full hx:bg-primary-400"></div>
   <span>Tools for streamers and makers</span>

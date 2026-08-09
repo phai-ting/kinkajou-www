@@ -32,7 +32,12 @@ params:
 
   navbar:
     displayTitle: true
-    displayLogo: false
+    displayLogo: true
+    logo:
+      path: kinkajou-face.png
+      dark: kinkajou-face.png
+      width: 44
+      height: 32
 
   page:
     width: normal

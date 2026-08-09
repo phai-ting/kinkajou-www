@@ -36,3 +36,9 @@ html.dark .hextra-footer {
 html.dark nav.hextra-nav {
   border-color: #273140;
 }
+
+.kinkajou-hero {
+  width: min(280px, 55vw);
+  height: auto;
+  display: block;
+}
