@@ -45,7 +45,7 @@ Open **Printers**.
 - If you already have printers, Bridge shows summary cards (connection, print state, progress, temps) with **Details** and **Add printer**.
 - If you have none (or you click **Add printer**), choose a path:
   - **Cloud via service** — requires a connected service. Pick a device from the account list; serial is filled in for you. Each Bambu serial can only be added once.
-  - **Standalone / LAN** — connect directly (Bambu LAN needs serial, IP, and access code; OctoPrint needs base URL and API key).
+  - **Standalone / LAN** — connect directly (Bambu LAN, OctoPrint, or Moonraker / Klipper). See [Which type do I pick?](../printers/) if you are unsure (for example Snapmaker U1 → Moonraker).
 
 After save, Bridge returns to the **printers list**. Open **Details** for status, **Remove printer**, and ready-made **overlay / Streamer.bot** connection info (printer id, API, WebSocket, Overview and Compact URLs).
 
@@ -70,5 +70,5 @@ Every main page uses the same top nav: **Dashboard**, **Services**, **Printers**
 Bridge is still early:
 
 - Built-in Bambu Lab cloud discovery works for listing / adding printers from your account.
-- Live Bambu MQTT and OctoPrint REST polling are implemented for status/events; expect more polish across releases.
+- Live Bambu MQTT, OctoPrint REST polling, and Moonraker REST polling are implemented for status/events; expect more polish across releases.
 - Thumbnail retrieval may return “not implemented” until a plugin supports it.

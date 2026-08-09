@@ -32,7 +32,7 @@ Bridge always passes:
 | --- | --- |
 | `printer_id` | Bridge printer instance id |
 | `printer_name` | Display name from Bridge |
-| `plugin_id` | Printer plugin id (for example `bambu`, `octoprint`) |
+| `plugin_id` | Printer plugin id (for example `bambu`, `octoprint`, `moonraker`) |
 | `event_type` | Same string as the action suffix (for example `print.started`) |
 
 Plus any fields from the event **payload** when present, which may include:

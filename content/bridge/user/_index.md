@@ -11,6 +11,7 @@ Install and operate Kinkajou Bridge on your PC — services, printers, optional 
 {{< cards >}}
   {{< card link="getting-started/" title="Getting started" icon="sparkles" >}}
   {{< card link="concepts/" title="Concepts" icon="light-bulb" >}}
+  {{< card link="printers/" title="Add a printer" icon="cube" >}}
   {{< card link="streamerbot/" title="Connect Streamer.bot" icon="play" >}}
   {{< card link="overlays/" title="Overlays in OBS" icon="desktop-computer" >}}
 {{< /cards >}}

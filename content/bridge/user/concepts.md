@@ -19,7 +19,7 @@ Bridge is organized around three kinds of plugins:
 | Kind | Role | Built-in examples |
 | --- | --- | --- |
 | **Service** | Account / hub connection (auth + device discovery) | Bambu Lab cloud (`bambu_cloud`) |
-| **Printer** | One device session (status + events) | Bambu (`bambu`), OctoPrint (`octoprint`) |
+| **Printer** | One device session (status + events) | Bambu (`bambu`), OctoPrint (`octoprint`), Moonraker (`moonraker`) |
 | **Integration** | Outbound consumer of Bridge events | Streamer.bot (`streamerbot`) |
 
 You typically connect a **service** once, then add one or more **printers** from that account — or add standalone LAN printers without a service. **Streamer.bot** is a single global integration that receives events from every printer.

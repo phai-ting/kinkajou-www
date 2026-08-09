@@ -56,7 +56,7 @@ Ship a Python package that registers entry points, for example in `pyproject.tom
 myprinter = "my_package.plugin:MyPrinterPlugin"
 ```
 
-Built-ins today: `bambu_cloud` (service), `bambu` and `octoprint` (printers), `streamerbot` (integration).
+Built-ins today: `bambu_cloud` (service), `bambu`, `octoprint`, and `moonraker` (printers), `streamerbot` (integration).
 
 ## Events
 
