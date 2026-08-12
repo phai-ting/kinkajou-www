@@ -32,6 +32,12 @@ These steps assume **OBS Studio**. Other apps with a Browser Source (Streamlabs 
    http://127.0.0.1:29067/bridge/compact/?printer=YOUR_PRINTER_ID
    ```
 
+   **Bar** (top/bottom edge strip):
+
+   ```text
+   http://127.0.0.1:29067/bridge/bar/?printer=YOUR_PRINTER_ID
+   ```
+
    These Bridge URLs are same-origin with the API, so Chromium will not prompt about accessing other apps or services on this device.
 
 4. Set size (Width × Height):
@@ -40,6 +46,7 @@ These steps assume **OBS Studio**. Other apps with a Browser Source (Streamlabs 
    | --- | --- |
    | Overview | **520 × 270** |
    | Compact | **520 × 130** |
+   | Bar | **1920 × 36** (match your canvas width) |
    | Status | **420 × 140** |
    | Progress | **480 × 160** |
 
@@ -58,6 +65,7 @@ These steps assume **OBS Studio**. Other apps with a Browser Source (Streamlabs 
 
 - Use a **transparent** background in OBS; these overlays use transparent page backgrounds.
 - Compact uses a colored left accent + badge so print state (printing / paused / complete / error) is readable at a glance.
-- Overview and Compact listen on Bridge’s `/v1/events` WebSocket and re-fetch status when that printer changes, while ticking remaining/elapsed locally each second.
+- **Bar** is a full-width progress strip only (layers · % · remaining). Place it flush to the top or bottom of the canvas and set Width to your scene width (for example **1920 × 36**). Keep the source uncropped so the centered % stays visible if the sides are tight. If you shrink Height below about **30px**, the text hides automatically and only the fill remains.
+- Overview, Compact, and Bar listen on Bridge’s `/v1/events` WebSocket and re-fetch status when that printer changes, while ticking remaining/elapsed locally between updates.
 - If the widget stays empty, confirm Bridge is running and that OBS can reach `127.0.0.1:29067` (same machine).
 - Custom look? See the [overlay developer docs](../../../overlay-developer/).

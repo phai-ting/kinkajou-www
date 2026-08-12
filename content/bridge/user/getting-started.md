@@ -67,11 +67,11 @@ Open **Printers**.
   - **Cloud via service** — requires a connected service. Pick a device from the account list; serial is filled in for you. Each Bambu serial can only be added once.
   - **Standalone / LAN** — connect directly (Bambu LAN, OctoPrint, or Moonraker / Klipper). See [Which type do I pick?](../printers/) if you are unsure (for example Snapmaker U1 → Moonraker).
 
-After save, Bridge returns to the **printers list**. Open **Details** for status, **Remove printer**, and ready-made **overlay / Streamer.bot** connection info (printer id, API, WebSocket, Overview and Compact URLs).
+After save, Bridge returns to the **printers list**. Open **Details** for status, **Remove printer**, and ready-made **overlay / Streamer.bot** connection info (printer id, API, WebSocket, Overview / Compact / Bar URLs).
 
 ### 3. Add overlays in OBS (optional)
 
-Copy an Overview or Compact URL from **Printers → Details**, then add Browser Sources in OBS. See [Overlays in OBS](../overlays/). No Streamer.bot connection is required for overlays.
+Copy an Overview, Compact, or Bar URL from **Printers → Details**, then add Browser Sources in OBS. See [Overlays in OBS](../overlays/). No Streamer.bot connection is required for overlays.
 
 ### 4. Connect Streamer.bot (optional)
 

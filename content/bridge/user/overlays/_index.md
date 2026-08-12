@@ -18,7 +18,7 @@ Show live printer status on stream with Bridge’s built-in overlays as OBS Brow
 ## Quick path
 
 1. Add a printer in Bridge (**Printers**).
-2. Open **Details** and copy an **Overview** or **Compact** URL (for example `http://127.0.0.1:29067/bridge/overview/?printer=…`).
+2. Open **Details** and copy an **Overview**, **Compact**, or **Bar** URL (for example `http://127.0.0.1:29067/bridge/overview/?printer=…`).
 3. Follow [Configure in OBS](setup-obs/) — one Browser Source per printer if you run several.
 
 Building your own widgets? See [Overlay developer docs](../../overlay-developer/). Want Streamer.bot alerts instead of (or in addition to) overlays? See [Connect Streamer.bot](../streamerbot/).

@@ -79,7 +79,7 @@ You can also skip the helper and call the [HTTP & WebSocket API](../api/) with p
 
 ## Tips
 
-- Copy a built-in overlay from the Bridge package (`overview`, `compact`, `status`, `progress`) as a starting point, then simplify.
+- Copy a built-in overlay from the Bridge package (`overview`, `compact`, `bar`, `status`, `progress`) as a starting point, then simplify.
 - Keep secrets out of overlay files; if you set an API token, pass `?token=…` on the Browser Source URL.
 - Custom overlays survive Bridge upgrades because they live in your data directory, not inside the app install.
 - Hosting the page somewhere else (GitHub Pages, a CDN) still works via CORS — use `?host=http://127.0.0.1:29067` so the page knows where Bridge is.
