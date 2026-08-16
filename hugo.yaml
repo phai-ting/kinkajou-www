@@ -27,6 +27,16 @@ menu:
       params:
         type: search
 
+  sidebar:
+    - identifier: more
+      name: More
+      params:
+        type: separator
+      weight: 1
+    - name: Download
+      url: https://github.com/phai-ting/kinkajou-bridge/releases
+      weight: 2
+
 params:
   description: Project Kinkajou — tools that connect your streaming and maker workflows.
 

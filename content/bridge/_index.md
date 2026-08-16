@@ -7,6 +7,10 @@ cascade:
 
 **Kinkajou Bridge** is a local multi-printer hub that connects 3D printers to Streamer.bot and other tools through a shared HTTP and WebSocket API. Windows users can install a packaged app; Mac and Linux users run Bridge from source.
 
+<div class="hx:my-6">
+{{< hextra/hero-button text="Download" link="https://github.com/phai-ting/kinkajou-bridge/releases" >}}
+</div>
+
 ## What it does
 
 - Connects **services** (for example Bambu Lab cloud), **printers** (cloud or LAN), and **integrations** (Streamer.bot)
